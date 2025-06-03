@@ -1,6 +1,3 @@
-Here is a complete `README.md` file for your airline reviews sentiment analysis project, including all key steps, insights, and visualizations:
-
----
 
 # ✈️ British Airways Reviews Sentiment Analysis
 
@@ -60,7 +57,7 @@ custom_stopwords.update(['ba', 'flight', 'airline', 'flights', 'airways', 'trip'
 A word cloud was generated to visualize the most frequent words in customer reviews.
 
 ![Word Cloud Example](#)
-
+![alt text](image.png)
 ---
 
 ## 📊 Most Common Words
@@ -174,6 +171,3 @@ airline-review-analysis/
 * [VADER Sentiment](https://github.com/cjhutto/vaderSentiment)
 * [WordCloud](https://github.com/amueller/word_cloud)
 
----
-
-Let me know if you'd like the file in `.md` format or want me to generate the corresponding Jupyter notebook too.
