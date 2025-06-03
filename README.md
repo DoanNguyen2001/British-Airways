@@ -56,13 +56,14 @@ custom_stopwords.update(['ba', 'flight', 'airline', 'flights', 'airways', 'trip'
 
 A word cloud was generated to visualize the most frequent words in customer reviews.
 
-![Word Cloud Example](#)
 ![alt text](image.png)
 ---
 
 ## 📊 Most Common Words
 
 A bar chart showing the top 10 most frequent words:
+
+![alt text](image-1.png)
 
 | Word    | Frequency |
 | ------- | --------- |
@@ -76,6 +77,7 @@ A bar chart showing the top 10 most frequent words:
 
 ## ✍️ Review Length Analysis
 
+![alt text](image-2.png)
 * A histogram showed the distribution of review lengths.
 * Most reviews contained **50–150 words**, suggesting moderate review depth.
 
@@ -88,6 +90,7 @@ A bar chart showing the top 10 most frequent words:
 * **Polarity** (range: -1 to 1): how positive/negative a review is.
 * **Subjectivity** (range: 0 to 1): how subjective/personal a review is.
 
+![alt text](image-3.png)
 ```python
 df['polarity'] = df['cleaned_reviews'].apply(lambda x: TextBlob(x).sentiment.polarity)
 df['subjectivity'] = df['cleaned_reviews'].apply(lambda x: TextBlob(x).sentiment.subjectivity)
@@ -113,7 +116,7 @@ otherwise → Neutral
 ```
 
 ### Distribution Pie Charts:
-
+![alt text](image-4.png)
 * **VADER Review Sentiment**:
 
   * Positive: \~50%
@@ -127,6 +130,8 @@ otherwise → Neutral
 ---
 
 ## 📈 Scatter Plot: Polarity vs. Subjectivity
+
+![alt text](image-5.png)
 
 * Displayed how opinionated reviews (subjectivity) relate to their sentiment polarity.
 * No strong correlation observed.
@@ -150,7 +155,7 @@ otherwise → Neutral
 ```
 airline-review-analysis/
 ├── british-airways-review.csv
-├── sentiment_analysis_notebook.ipynb
+├── british_airways.ipynb
 ├── README.md
 ```
 
